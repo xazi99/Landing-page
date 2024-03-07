@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Webpage</title>
+
+
+
+    <style>
+        body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: beige;
+    color: pink;
+    text-align: left;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+#home {
+    padding: 20px;
+}
+
+#home h2 {
+    color: palevioletred;
+    text-align: center;
+    font-size: 4em;
+}
+
+#home p {
+    color: peru;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.My-picture {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    border-color: palevioletred;
+    
+}
+    </style>
+
+
+    <style>   #about {
+        background-color: #f8f8f8;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #about h2 {
+        color: grey;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    #about p {
+        color: grey;
+        font-size: 1.5em;
+    }
+    </style>
+    
+</head>
+    <header>
+        <h1>ClassyShoes.</h1>
+    </header>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <section id="home">
+            <h2>Classy and Elegant.</h2>
+            <p>Your Journey starts here,<br> walk the walk.</p>
+            <img class="My-picture" src="images/img7.jpg" alt="">
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We sell affortable and comfortable heels.</p>
+
+            <main>
+                <section class="featured">
+                  <div class="container">
+                    <h2 class="section-title">Featured products</h2>
+                    <div class="split">
+                        <a href="" class="featured__item">
+                            <img src="images/img1.jpg" alt="" class="featured__img">
+                            <p class="featured__details"><span class="price">R99</span> shoe name</p>
+                        </a>
+                        <a href="" class="featured__item">
+                            <img src="images/img2.jpg" alt="" class="featured__img">
+                            <p class="featured__details"><span class="price">R99</span> shoe name</p>
+                        </a>
+                        <a href="" class="featured__item">
+                            <img src="images/img5.jpg" alt="" class="featured__img">
+                            <p class="featured__details"><span class="price">R99</span> shoe name</p>
+                        </a>
+                    </div>
+                  </div>  
+                </section>
+    
+    
+                <section class="Our-products">
+                    <div class="container">
+                        <h2 class="section-title">Our products</h2>
+    
+                        <article class="product shoe-black spacing">
+                            <img src="images/img4.jpg" alt="" class="product__img">
+                            <h3 class="product__title">Classy and comfortable shoes</h3>
+                            <p class="product__description">Black pencil heel with a bronch for church and special events.</p>
+                            <a href="" class="btn">Buy now</a>
+                        </article>
+    
+                        <article class="product shoe-pitch spacing">
+                            <img src="images/img3.jpg" alt="" class="product__img">
+                            <h3 class="product__title">Classy and comfortable shoes</h3>
+                            <p class="product__description">Pinkish velvet pencil with a black bow ties for dates and events.</p>
+                            <a href="" class="btn">Buy now</a>
+                        </article>
+    
+                        <article class="product shoe-white spacing">
+                            <img src="images/img6.jpg" alt="" class="product__img">
+                            <h3 class="product__title">Classy and comfortable shoes</h3>
+                            <p class="product__description">White pencil with a gold something-something to rock it on Durban July.</p>
+                            <a href="" class="btn">Buy now</a>
+                        </article>
+    
+                    </div>
+                </section>
+            </main>
+        </section>
+
+
+
+    <script>
+        function showPage(pageId) {
+        document.getElementById('home').style.display = 'none';
+        document.getElementById('about').style.display = 'none';
+        document.getElementById(pageId).style.display = 'block';
+      }
+    </script>
+
+        
+
+
+    <footer>
+        <p>&copy; 2024  . All rights reserved.</p>
+    </footer>
+</body>
+</html>
+    
+</body>
+</html>

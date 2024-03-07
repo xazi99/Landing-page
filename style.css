@@ -1,0 +1,305 @@
+*,
+    *::before,
+    *::after{
+        box-sizing: border-box;
+    }
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+     display: block;
+}
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+section {
+    padding: 7em 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.split {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > * {
+        flex-basis: 30%;
+        min-width: 15em;
+
+    }
+}
+
+.spacing>*+* {
+    margin-top: var(--spacer, 2rem);
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1.25em;
+    background: var(--clr-accent, peru);
+    color: var(--clr-text, #fff);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    border-radius: .25em;
+    transition: transform 250ms ease-in-out;
+    opacity: 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.primary-title {
+    font-size: 4rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.split a {
+    text-decoration: none;
+    color: palevioletred;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 4rem ;
+    line-height: 1;
+    color: peru;
+    margin-bottom: 5rem;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 15em 0;
+   /* background-color: #222;*/
+    background-image: 
+    url(images/img1.jpg),
+    radial-gradient(#444,#111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.featured__img {
+    border-radius: 50%;
+}
+
+.featured {
+    background: radial-gradient(pink, beige);
+
+
+
+
+    header {
+        background-color: beige;
+        color:white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    header h1 {
+        margin: 0;
+
+    }
+    
+    
+    nav {
+        background-color: #555;
+        padding: 10px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+        background-color: beige;
+        float: right;
+    }
+    
+    section {
+        padding: 20px;
+        font-size: 20px;
+    }
+    #about h2, p{
+        font-size: 30px;
+    }
+    #home {
+        padding: 20px;
+    }
+    
+    #home h2 {
+        color: #333;
+        text-align: center;
+    }
+    
+    #home p {
+        color: #666;
+        text-align: center;
+    }
+    
+    /* Style the image in the home section */
+    .My-picture {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        float: right;
+    }
+
+section {
+    padding: 20px;
+    font-size: 20px;
+}
+#about h2, p{
+    font-size: 30px;
+}
+
+
+
+/**************about***********/
+
+#about {
+    margin: 0;
+}
+
+#about h2 {
+    display: block;
+    color: white;
+    font: 10px;
+}
+#about p {
+    display: flex;
+    font-size: 10px;
+    color: peru;
+    font-size: 10px;
+}
+.featured__img {
+    border-radius: 50%;
+    
+}
+
+
+
+   &__item {
+    display: block;
+    position: relative;
+    transform: scale(.85);
+    transition: transform 250ms ease-in-out;
+    text-decoration: none;
+    color: #444;
+    text-align: center;
+    line-height: 1.2;
+
+
+   
+    &:hover,
+    &:focus{
+        transform: scale(1);
+
+        .featured__details {
+            opacity: 1;
+        }
+
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 10;
+        left: 10;
+        padding: 75% 75% 0 0;
+        border-radius: 0%;
+        background-color: pink;
+        z-index: -1;
+    }
+   }  
+
+   .featured__details p, price, span {
+    opacity: 0;
+    transition: opacity 240ms linear;
+    font-size: 10px;
+
+    span {
+        display: block;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+   }
+}
+
+.product{
+    background: radial-gradient(pink, beige);
+    padding: 3em ;
+    border-radius: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+.product__title {
+    font-size: 2rem;
+    line-height: 1.1;
+    color: black;
+    text-shadow: 0 0 .2em rgb(black, .2);
+}
+
+.product__img {
+    margin: -2em 0 0 0;
+}
+
+    @media  (min-width: 45rem) {
+        .product__img {
+            float: right;
+            width: 20%;
+            outline: 2px solid pink;
+
+            }   
+    }
+
+
+
+.product shoe-black {
+    color: var(--clr-inner) pink;
+    color: var(--clr-outer) beige;
+    color: var(--clr-accent) peru;
+    
+}
+
+.product shoe-pitch {
+    color: var(--clr-inner) purple;
+    color: var(--clr-outer) pink;
+    color: var(--clr-accent) peru;
+}
+ 
+.product shoe-pitch {
+    color: var(--clr-inner) plum;
+    color: var(--clr-outer) pink;
+    color: var(--clr-accent) peru;
+
+}
+
+
+footer {
+    background-color: peru;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
